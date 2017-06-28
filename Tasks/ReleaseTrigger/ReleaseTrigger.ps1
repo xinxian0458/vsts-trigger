@@ -83,7 +83,7 @@ Function Get-Artifacts {
 
 	if($currentArtifact -ne $null) {
 		$artifacts += @{
-			alias = $env:BUILD_DEFINITIONNAME
+			alias = $currentArtifact.alias
 			instanceReference = @{
 				name = $env:BUILD_BUILDNUMBER
 				id = $env:BUILD_BUILDID
